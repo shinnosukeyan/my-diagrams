@@ -13,7 +13,7 @@ graph TD
 
     Project -->|1. コードを保管 (git push)| GitHub
     GitHub -->|2. 自動でウェブサイトを建築 (自動デプロイ)| VPS
-
+    
     subgraph "インターネット"
         Visitors["ウェブサイト訪問者"] -->|サイトを閲覧| VPS
         VPS -->|3. 記事や画像データを取得 (API経由)| Sanity
